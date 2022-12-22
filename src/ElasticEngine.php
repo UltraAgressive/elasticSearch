@@ -362,4 +362,19 @@ class ElasticEngine extends Engine
             ->orderBy($model->getScoutKeyName())
             ->unsearchable();
     }
+
+    public function lazyMap(Builder $builder, $results, $model)
+    {
+        throw new \Exception('Deprecated method');
+    }
+
+    public function createIndex($name, array $options = [])
+    {
+        throw new \Exception('Deprecated method');
+    }
+
+    public function deleteIndex($name)
+    {
+        throw new \Exception('Deprecated method');
+    }
 }
